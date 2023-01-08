@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Chart Component</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="balance">
+                <p>My balance</p>
+                <p>$<span class="balance-number">921.48</span></p>
+            </div>
+            <a href="index.html"><img src="images/logo.svg" alt="Logo" class="logo"></a>
+        </header>
+        <main class="main">
+            <div class="json-showcase">
+                <h1>Spending - Last 7 days</h1>
+                <button class="json-button json-button-week1">Week 1</button>
+                <button class="json-button json-button-week2">Week 2</button>
+            </div>
+            <section class="chart">
+                <div class="chart-container">
+                    <div class="chart-spendings">
+                        <p>$<span class="daily-amount">50.45</span></p>
+                    </div>
+                    <div class="chart-body">
+
+                    </div>
+                    <div class="chart-day">
+                        <p class="day-name">mon</p>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-spendings">
+                        <p>$<span class="daily-amount">100.91</span></p>
+                    </div>
+                    <div class="chart-body">
+
+                    </div>
+                    <div class="chart-day">
+                        <p class="day-name">tue</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-spendings">
+                        <p>$<span class="daily-amount">52.36</span></p>
+                    </div>
+                    <div class="chart-body selected">
+
+                    </div>
+                    <div class="chart-day">
+                        <p class="day-name">wed</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-spendings">
+                        <p>$<span class="daily-amount">31.07</span></p>
+                    </div>
+                    <div class="chart-body">
+
+                    </div>
+                    <div class="chart-day">
+                        <p class="day-name">thu</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-spendings">
+                        <p>$<span class="daily-amount">23.39</span></p>
+                    </div>
+                    <div class="chart-body">
+
+                    </div>
+                    <div class="chart-day">
+                        <p class="day-name">fri</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-spendings">
+                        <p>$<span class="daily-amount">43.28</span></p>
+                    </div>
+                    <div class="chart-body">
+
+                    </div>
+                    <div class="chart-day">
+                        <p class="day-name">sat</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-spendings">
+                        <p>$<span class="daily-amount">25.48</span></p>
+                    </div>
+                    <div class="chart-body">
+
+                    </div>
+                    <div class="chart-day">
+                        <p class="day-name">sun</p>
+                    </div>
+                </div>
+            </section>
+            <section class="spendings-data">
+                <div class="total">
+                    <p>Total this month</p>
+                    <p>$<span>478.33</span></p>
+                </div>
+                <div class="last-month-differencial">
+                    <p>+<span>2.4</span>%</p>
+                    <p>from last month</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

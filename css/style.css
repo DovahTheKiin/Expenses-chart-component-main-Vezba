@@ -1,0 +1,194 @@
+:root {
+    --primary-red-400: hsl(10, 79%, 65%);
+    --primary-cyan-400: hsl(186, 34%, 60%);
+
+    --neutral-brown-700: hsl(25, 47%, 15%);
+    --neutral-brown-500: hsl(28, 10%, 53%);
+    --neutral-cream-300: hsl(27, 66%, 92%);
+    --neutral-pale-orange-200: hsl(33, 100%, 98%);
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-cream-300);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.chart-spendings {
+    display: none;
+}
+.container {
+    width: 100%;
+}
+.header {
+    border-radius: 10px;
+    background-color: var(--primary-red-400);
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.balance p:nth-of-type(1){
+    color: var(--neutral-pale-orange-200);
+    font-size: 0.9rem;
+    opacity: 0.9;
+    padding-bottom: 0.2rem;
+    font-weight: 100;
+}
+.balance p:nth-of-type(2){
+    color: var(--neutral-pale-orange-200);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.logo {
+    width: 60px;
+}
+.main {
+    background-color: var(--neutral-pale-orange-200);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.main h1 {
+    font-size: 1.5rem;
+    color: var(--neutral-brown-700);
+}
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:2px solid var(--neutral-cream-300);
+    padding-bottom: 1.5rem;
+}
+.chart-container {
+    width: 32px;
+    height: 180px;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.chart-spendings {
+    background-color: var(--neutral-brown-700);
+    width: 160%;
+    color: var(--neutral-pale-orange-200);
+    padding: 0.4rem;
+    font-size: 0.850rem;
+    border-radius: 3px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right:0px;
+    left: -8.5px;
+}
+.chart-body {
+    background-color: var(--primary-red-400);
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* .chart-body:hover {
+    filter: brightness(1.2);
+} */
+.chart-day {
+    display: flex;
+    justify-content: center;
+}
+.chart-day p {
+    font-size: 0.75rem;
+    color: var(--neutral-brown-500);
+    padding-top: 0.7rem;
+}
+.spendings-data {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total p:nth-of-type(1) {
+    color: var(--neutral-brown-500);
+    padding-bottom: 0.2rem;
+}
+.total p:nth-of-type(2) {
+    color: var(--neutral-brown-700);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.last-month-differencial {
+    margin-top: 1rem;
+}
+.last-month-differencial p:nth-of-type(1) {
+    text-align: right;
+    font-size: 1rem;
+    color: var(--neutral-brown-700);
+    font-weight: 700;
+}
+.last-month-differencial p:nth-of-type(2) {
+    color: var(--neutral-brown-500);
+}
+.json-showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.json-button {
+    border: 1px solid var(--primary-red-400);
+    border-radius: 100vw;
+    background-color: var(--neutral-pale-orange-200);
+    color: var(--neutral-brown-700);
+    font-family: 'DM Sans', sans-serif;
+    padding: 0.3rem;
+    cursor: pointer;
+    font-size: 0.6rem;
+    font-weight: 700;
+}
+
+/* JS CLASSE */
+
+.selected {
+    background-color: var(--primary-cyan-400);
+}
+.active {
+    display: flex;
+}
+.hover-color {
+    background-color: hsl(10, 79%, 75%);
+    transition: 0s;
+}
+.hover-color-selected {
+    background-color: hsl(186, 34%, 80%);
+    transition: 0s;
+}
+@media(min-width:400px) {
+    .container {
+        width: 400px;
+    }
+    .header {
+        padding: 1.5rem 1.5rem;
+    }
+    .main {
+        padding: 1.5rem;
+    }
+    .chart-container {
+        width: 34px;
+    }
+}
